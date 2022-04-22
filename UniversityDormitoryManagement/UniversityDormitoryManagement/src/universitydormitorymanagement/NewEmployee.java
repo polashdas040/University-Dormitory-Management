@@ -73,7 +73,7 @@ public class NewEmployee extends javax.swing.JFrame {
         }
 
         if (loc_dateOfBirth.getDate().compareTo(new Date()) > 0) {
-            JOptionPane.showMessageDialog(null, "No Employee From The Future Are Allowed");
+            JOptionPane.showMessageDialog(null, "No Employees From The Future Are Allowed");
             return false;
         }
         if (loc_father.getText().equals("")) {
@@ -766,6 +766,7 @@ public class NewEmployee extends javax.swing.JFrame {
                 emp.EmployeeManageLoc("insert", name1, fName, mName, phone1, date, gender, designation1, email1, persentAddress, permanenAddress, status);
                 showdetailsEmployees();                
                 clearLoc();
+                
             } else {
                 JOptionPane.showMessageDialog(null, "This Phone Number Already Exists", "Warning", 2);
             }
@@ -806,6 +807,7 @@ public class NewEmployee extends javax.swing.JFrame {
                 emp.EmployeeManageInt("insert", name1, fName, mName, phone1, date, gender, designation1, email1, persentAddress, permanenAddress, status,passport,count);
                 showdetailsEmployees();
                 clearInt();
+          
             } else {
                 JOptionPane.showMessageDialog(null, "This Phone Number Already Exists", "Warning", 2);
             }

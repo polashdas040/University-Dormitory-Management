@@ -107,7 +107,7 @@ public class NewStudent extends javax.swing.JFrame {
         }
 
         if (loc_date.getDate().compareTo(new Date()) > 0) {
-            JOptionPane.showMessageDialog(null, "No Student From The Future Are Allowed");
+            JOptionPane.showMessageDialog(null, "No Students From The Future Are Allowed");
             return false;
         }
         if (loc_fName.getText().equals("")) {
@@ -932,6 +932,7 @@ public class NewStudent extends javax.swing.JFrame {
                 showdetailsStudents();
                 LoginForm.showdetails();
                 clearInt();
+                clearLoc();
                 getroom();
             } else {
                 JOptionPane.showMessageDialog(null, "This Phone Number Already Exists", "Warning", 2);
@@ -984,6 +985,7 @@ public class NewStudent extends javax.swing.JFrame {
                 showdetailsStudents();
                 LoginForm.showdetails();
                 clearLoc();
+                clearInt();
                 getroom();
             } else {
                 JOptionPane.showMessageDialog(null, "This Phone Number Already Exists", "Warning", 2);
